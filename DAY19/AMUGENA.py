@@ -1,0 +1,55 @@
+import turtle as t
+t.speed(0)
+def allClear(x,y):
+    t.clear()
+def jump(x,y):
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+def red():
+    t.color("red")
+def blue():
+    t.color("blue")
+def green():
+    t.color("green")
+def 원그리기():
+    t.circle(60)
+def 네모그리기():
+    t.penup()
+    t.pendown()
+    t.forward(100)
+    t.right(90)
+    t.forward(100)
+    t.right(90)
+    t.forward(100)
+    t.right(90)
+    t.forward(100)
+    t.penup()
+def 삼각형그리기():
+    t.forward(100)
+    t.left(120)
+    t.forward(100)
+    t.left(120)
+    t.forward(100)
+def 오각형그리기():
+    t.forward(100)
+    t.left(72)
+    t.forward(100)
+    t.left(72)
+    t.forward(100)
+    t.left(72)
+    t.forward(100)
+    t.left(72)
+    t.forward(100)
+t.onscreenclick(jump)
+t.onscreenclick(allClear,3)
+t.onkey(네모그리기,"s")
+t.onkey(원그리기,"c")
+t.onkey(삼각형그리기,"t")
+t.onkey(오각형그리기,"o")
+t.onkey(red,"r")
+t.onkey(blue,"b")
+t.onkey(green,"g")
+t.ondrag(t.goto)
+t.listen()
+t.mainloop()

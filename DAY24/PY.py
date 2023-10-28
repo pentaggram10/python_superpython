@@ -26,6 +26,6 @@ if __name__=="__main__":
     print("==============================================================================================")
     num1=input("[first number]+[number]:")
     num2=input("[second number]+[enter]:")
-    opt=input("(1)GCD or (2 LCM)+[enter]:")
+    opt=input("(1)GCD or (2) LCM+[enter]:")
 
     calculate(int(num1),int(num2),int(opt))
